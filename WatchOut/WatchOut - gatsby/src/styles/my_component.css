@@ -1,0 +1,8 @@
+.section_container{
+    display: flex;
+    flex-direction: column;
+}
+
+-section_container:not(:first_child){
+    margin-top: 4rem;
+}

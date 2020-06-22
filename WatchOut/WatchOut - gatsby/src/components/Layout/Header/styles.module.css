@@ -1,0 +1,110 @@
+.Header {
+  --padding-top-bottom: var(--header-padding, 5px);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-index-menu, 1000);
+  height: var(--header-height-, 106px);
+  background: #fff;
+  border-bottom: 1px solid var(--color-grey, #000);
+  margin-bottom: 40px;
+}
+
+.Cart{
+  display: flex;
+  flex-direction: column;
+  color: #611919;
+}
+.User{
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+  color: #611919;
+}
+
+i{
+  text-align: center;
+}
+
+.Cart:hover{
+  cursor: pointer;
+  color: #441212;
+}
+
+.User:hover{
+  cursor: pointer;
+  color: #441212;
+}
+
+.Order{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.End{
+  display: flex;
+}
+
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.Logo {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 500;
+  padding: var(--logo-padding) 0;
+  color: var(--color-gold, orange);
+}
+
+img{
+  height: 100px;
+}
+
+.Nav {
+  padding: 8px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.NavLink {
+  display: inline-block;
+  padding: var(--header-padding, 5px) 10px;
+  margin-left: 0px;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 15px;
+  font-weight: normal;
+  color: var(--color-primary, #000000);
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transition: all 0.25s linear;
+  overflow-x: hidden;
+}
+
+.NavLink_active,
+.NavLink:hover {
+  color: white;
+  background-color:var(--color-gold);
+  border-bottom: 3px solid var(--color-gold, orange);
+}
+
+.Link{
+  border-bottom: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .Nav {
+    display: none;
+  }
+}

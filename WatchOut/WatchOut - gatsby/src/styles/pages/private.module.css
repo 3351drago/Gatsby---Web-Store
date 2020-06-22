@@ -1,0 +1,12 @@
+.Logout {
+    position: absolute;
+    top: 1;
+    right: 0;
+    background: #611919;
+    color: white;
+    padding: 0.5rem 2rem;
+  }
+  
+  .Logout:hover {
+    border: none;
+  }

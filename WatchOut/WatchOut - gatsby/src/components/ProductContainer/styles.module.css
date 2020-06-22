@@ -1,0 +1,28 @@
+.Container{
+    background-color:white;
+    max-width: 220px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Button_icon{
+    text-align: center;
+  }
+  .Post {
+    padding-top: 0.5rem;
+  }
+  
+  .Excerpt {
+    padding: 0.5rem 0;
+  }
+  
+  .Date {
+    font-weight: 400;
+    color: var(--color-dark-grey, #000);
+  }
+
+  .Container:hover{
+    background-color: rgb(228, 228, 228);
+  }
+  

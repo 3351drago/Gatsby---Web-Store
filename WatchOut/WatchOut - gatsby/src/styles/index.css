@@ -1,0 +1,136 @@
+:root {
+  --color-primary: #494949;
+  --color-grey: #eeeeee;
+  --color-dark-grey: #776666;
+  --color-gold: #611919;
+
+  --header-height: 40px;
+  --header-padding: 5px;
+
+  --z-index-menu: 1000;
+  --z-index-overlay: 999;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Spectral", -apple-system, "BlinkMacSystemFont", "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+
+.aside{
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.container-flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.filter{
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0px 20px 5px 0;
+  padding-bottom: 5px;
+  width: 150px;
+  border-bottom: 1px solid lightgray; 
+}
+
+.about-us{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text{
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+.filter:first-child{
+  padding-top: 17px;
+}
+
+.filter:hover{
+  cursor: pointer;
+  color: #611919;
+}
+
+
+@media only screen and (max-width: 600px) {
+  body.open {
+    overflow: hidden;
+  }
+
+  .aside{
+    flex-direction: column;
+  }
+
+  .filter{
+    display: none;
+  }
+
+  .hide{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .hide:hover{
+    color: #611919;
+    cursor: pointer;
+    text-align: center;
+  }
+
+}
+@media only screen and (min-width: 600px) {
+  .hide{
+    display: none;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--color-gold, #611919);
+  text-decoration: none;
+}
+
+.figure {
+  max-width: 900px;
+  margin: auto;
+}
+
+.figure__caption {
+  text-align: center;
+  color: var(--color-primary, #000);
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color-grey, #000);
+}
